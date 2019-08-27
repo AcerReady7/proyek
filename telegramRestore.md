@@ -1,6 +1,6 @@
 There's not telegram API method for this, we need to call MTProto methods to retrieve messages from the "Recent Actions" (Admin Log) since deleted messages (and medias) gets moved there for 48 hours before the permanent deletion.
 
-```
+```python
 
 from telethon import TelegramClient, events, sync
 from telethon.tl.types import InputChannel, PeerChannel
