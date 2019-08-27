@@ -1,3 +1,5 @@
+## Restore deleted Telegram messages, medias and files from groups
+
 There's not telegram API method for this, we need to call MTProto methods to retrieve messages from the "Recent Actions" (Admin Log) since deleted messages (and medias) gets moved there for 48 hours before the permanent deletion.
 
 ```python
